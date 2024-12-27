@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 22:56:16 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/27 23:00:39 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2024/12/27 23:04:18 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define ITER_HPP
 
 #include <cstddef>
+#include <iostream>
 
 template <typename T, typename F>
 void	iter( T* array, size_t length, F func ) {
