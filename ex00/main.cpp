@@ -6,12 +6,15 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 20:48:42 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/27 21:41:46 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2025/01/06 16:21:31 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "whatever.hpp"
 
+/*-----------------*/
+/*  Main function  */
+/*-----------------*/
 int main( void ) {
 
 	int a = 2;

@@ -6,7 +6,7 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/06 11:53:55 by tkubanyc          #+#    #+#             */
-/*   Updated: 2025/01/06 13:33:58 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2025/01/06 16:08:26 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 #include <cstddef>
 #include <iostream>
 
+/*----------------------*/
+/*  Define Array class  */
+/*----------------------*/
 template <typename T>
 class	Array {
 private:
@@ -32,10 +35,10 @@ public:
 	Array&	operator=( const Array& other );
 	~Array( void );
 
-	T&	operator[]( size_t index );
+	T&			operator[]( size_t index );
 	const T&	operator[]( size_t index ) const;
 
-	size_t	size( void ) const;
+	size_t		size( void ) const;
 
 };
 

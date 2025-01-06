@@ -6,23 +6,30 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 23:04:26 by tkubanyc          #+#    #+#             */
-/*   Updated: 2024/12/27 23:09:39 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2025/01/06 16:20:23 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "iter.hpp"
 
-// Function to print an element
+/*--------------------------------*/
+/*  Function to print an element  */
+/*--------------------------------*/
 template <typename T>
 void printElement( const T& element ) {
 	std::cout << element << " ";
 }
 
-// Function to double an integer element
+/*-----------------------------------------*/
+/*  Function to double an integer element  */
+/*-----------------------------------------*/
 void doubleElement( int& element ) {
 	element *= 2;
 }
 
+/*-----------------*/
+/*  Main function  */
+/*-----------------*/
 int main( void ) {
 
 	// Test with an array of integers

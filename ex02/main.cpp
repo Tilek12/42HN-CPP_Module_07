@@ -6,13 +6,16 @@
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/06 12:52:00 by tkubanyc          #+#    #+#             */
-/*   Updated: 2025/01/06 16:02:19 by tkubanyc         ###   ########.fr       */
+/*   Updated: 2025/01/06 16:17:18 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.hpp"
 
-int main() {
+/*-----------------*/
+/*  Main function  */
+/*-----------------*/
+int main( void ) {
 	try {
 		// Default constructor
 		Array<int> emptyArray;
