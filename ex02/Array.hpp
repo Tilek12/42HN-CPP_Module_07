@@ -1,26 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   iter.hpp                                           :+:      :+:    :+:   */
+/*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkubanyc <tkubanyc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/27 22:56:16 by tkubanyc          #+#    #+#             */
-/*   Updated: 2025/01/06 15:59:04 by tkubanyc         ###   ########.fr       */
+/*   Created: 2025/01/06 11:53:55 by tkubanyc          #+#    #+#             */
+/*   Updated: 2025/01/06 13:33:58 by tkubanyc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ITER_HPP
-#define ITER_HPP
+#ifndef ARRAY_HPP
+#define ARRAY_HPP
 
+#include <exception>
 #include <cstddef>
 #include <iostream>
 
-template <typename T, typename F>
-void	iter( T* array, size_t length, F func ) {
-	for ( size_t i = 0; i < length; i++ ) {
-		func( array[i] );
-	}
-}
+template <typename T>
+class	Array {
+private:
+
+	T*		_data;
+	size_t	_size;
+
+public:
+
+	Array( void );
+	Array( size_t n );
+	Array( const Array& other );
+	Array&	operator=( const Array& other );
+	~Array( void );
+
+	T&	operator[]( size_t index );
+	const T&	operator[]( size_t index ) const;
+
+	size_t	size( void ) const;
+
+};
+
+#include "Array.tpp"
 
 #endif
